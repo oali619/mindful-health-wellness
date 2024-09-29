@@ -1,5 +1,5 @@
-import apartmentJPG from './apartment.jpg';
-import apartmentJPEG from './apartment.jpeg';
+import puzzleBrain from './puzzle-brain.png';
+import therapy from './therapy.png';
 import armhsImg from './armhs-image.jpeg';
 import hssImage from './hss-image.jpeg';
 import dhsImage from './245D-image.jpeg';
@@ -10,8 +10,8 @@ import mission4 from './mission4.jpeg';
 import logo from './logo.png';
 
 export {
-	apartmentJPG,
-	apartmentJPEG,
+	puzzleBrain,
+	therapy,
 	armhsImg,
 	hssImage,
 	dhsImage,
@@ -19,5 +19,5 @@ export {
 	mission2,
 	mission3,
 	mission4,
-	logo,
+	logo
 };

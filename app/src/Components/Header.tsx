@@ -10,12 +10,13 @@ import { navigation } from '../constants';
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(' ');
 }
+
 import { logo } from '../../images';
 
 export default function Header() {
 	return (
 		<div className='min-h-full'>
-			<Disclosure as='nav' className='bg-gray-800 fixed top-0 left-0 right-0'>
+			<Disclosure as='nav' className='bg-green-800 fixed top-0 left-0 right-0'>
 				<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
 					<div className='flex h-16 items-center justify-between'>
 						<div className='flex items-center'>
@@ -43,8 +44,8 @@ export default function Header() {
 											}}
 											className={classNames(
 												item.current
-													? 'bg-gray-900 text-white'
-													: 'text-gray-300 hover:bg-gray-700 hover:text-white',
+													? 'bg-green-700 text-white'
+													: 'text-white hover:bg-green-700',
 												'rounded-md px-3 py-2 text-sm font-medium'
 											)}
 										>
@@ -56,7 +57,7 @@ export default function Header() {
 						</div>
 						<div className='-mr-2 flex md:hidden'>
 							{/* Mobile menu button */}
-							<DisclosureButton className='group relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
+							<DisclosureButton className='group relative inline-flex items-center justify-center rounded-md bg-green-800 p-2 text-white hover:bg-green-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-800'>
 								<span className='absolute -inset-0.5' />
 								<span className='sr-only'>Open main menu</span>
 								<Bars3Icon
@@ -82,8 +83,8 @@ export default function Header() {
 								aria-current={item.current ? 'page' : undefined}
 								className={classNames(
 									item.current
-										? 'bg-gray-900 text-white'
-										: 'text-gray-300 hover:bg-gray-700 hover:text-white',
+										? 'bg-green-900 text-white'
+										: 'text-white hover:bg-gray-700 hover:text-white',
 									'block rounded-md px-3 py-2 text-base font-medium'
 								)}
 							>

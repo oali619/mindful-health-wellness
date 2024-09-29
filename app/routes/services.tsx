@@ -15,6 +15,16 @@ export default function Services() {
 		{ name: 'Tenant Education' },
 		{ name: 'And More' },
 	];
+	const armhsServiceCategories = [
+		{ name: 'Basic Living and Social Skills' },
+		{ name: 'Certified Peer Specialist Services' },
+		{ name: 'Community Intervention' },
+		{ name: 'Functional Assessment' },
+		{ name: 'Level of Care Assessment' },
+		{ name: 'Individual Treatment Plan' },
+		{ name: 'Medication Education' },
+		{ name: 'Transition to Community Living Services' },
+	];
 
 	const [disclosureIsOpen, setDisclosureIsOpen] = useState(false);
 
@@ -29,33 +39,33 @@ export default function Services() {
 						clipPath:
 							'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
 					}}
-					className='aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20'
+					className='aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#B9F6CA] to-[#00C853] opacity-20'
 				/>
 			</div>
 			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
 				<div className='mx-auto max-w-2xl lg:mx-0'>
 					<h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-						What is Housing Stabilization Services?
+						What is ARMHS?
 					</h2>
 					<p className='mt-6 text-lg leading-8 text-gray-600'>
-						Housing Stabilization Services is a new Minnesota Medical Assistance
-						benefit to help people with disabilities, including mental illness
-						and substance use disorder, and seniors find and keep housing.
+						Adult Rehabilitative Mental Health Services (ARMHS) is a
+						strengths-based, person-centered, recovery-focused program with the
+						purpose of helping individuals with mental illness overcome
+						impairments caused by their symptoms in order to function
+						independently in their homes or places of residence. ARMHS can
+						provide individuals with support in the following areas:
 					</p>
 				</div>
 				<div className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'>
-					<div className='grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-gray-600 sm:grid-cols-2 md:flex lg:gap-x-10'>
-						{hssServiceCategories.map((service, index) => (
-							<div key={service.name}>
-								{service.name}{' '}
-								{index !== hssServiceCategories.length - 1 && (
-									<span aria-hidden='true'>&rarr;</span>
-								)}
-							</div>
+					<div className='text-base font-semibold leading-7 text-gray-600 indent-8'>
+						{armhsServiceCategories.map((service) => (
+							<li key={service.name}>{service.name}</li>
 						))}
 					</div>
-          {/* TODO: need to do something here label or something or redesign this */}
-          <p className='text-4xl font-bold mt-16 sm:mt-20 mb-4 tracking-tight text-gray-900 text-center'>TLDR;</p>
+					{/* TODO: need to do something here label or something or redesign this */}
+					<p className='text-4xl font-bold mt-16 sm:mt-20 mb-4 tracking-tight text-gray-900 text-center'>
+						TLDR;
+					</p>
 					<div className='grid grid-cols-1 gap-8 sm:grid-cols-4'>
 						{hssServiceTypes.map((hssServiceType) => (
 							<div key={hssServiceType.name}>
@@ -63,7 +73,7 @@ export default function Services() {
 									<DisclosureButton className='group flex items-center justify-between gap-2 font-semibold text-gray-700'>
 										{hssServiceType.name}
 										{/* TODO: fix the onClick functionality changing all + to - */}
-                    {/* clicking the name opens accordian but doesn't change +/- */}
+										{/* clicking the name opens accordian but doesn't change +/- */}
 										{disclosureIsOpen ? (
 											<svg
 												xmlns='http://www.w3.org/2000/svg'

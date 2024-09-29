@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { testimonials, services, values } from '../src/constants'
-import { apartmentJPG, mission1, mission2, mission3, mission4 } from '../images'
+import { therapy, mission1, mission2, mission3, mission4 } from '../images'
 
 export const meta: MetaFunction = () => {
   return [
@@ -22,7 +22,7 @@ export default function Index() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
-            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#B9F6CA] to-[#00C853] opacity-20"
           />
         </div>
         <main>
@@ -30,9 +30,9 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row mt-20">
                 <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 content-center">
                   <h1 className="text-7xl font-bold tracking-tight text-gray-900">Mindful Health and Wellness</h1>
-                  <p className="text-3xl text-right">Ensuring Stable Housing for Everyone</p>
+                  <p className="text-3xl text-right">Adult Rehabilitation Mental Health Services (ARMHS)</p>
                 </div>
-                <img className="rounded-lg sm:mr-4" src={apartmentJPG} alt="Housing" />
+                <img className="rounded-lg sm:mr-4" src={therapy} alt="Housing" />
             </div>
           </section>
 
@@ -76,7 +76,7 @@ export default function Index() {
                     clipPath:
                       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                   }}
-                  className="aspect-[1400/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                  className="aspect-[1400/845] w-[68.5625rem] bg-gradient-to-tr from-[#B9F6CA] to-[#00C853] opacity-20"
                 />
               </div>
               <h2 className="text-5xl font-bold text-gray-900 place-self-center">Mission & Values</h2>
@@ -135,7 +135,7 @@ export default function Index() {
                     clipPath:
                       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                   }}
-                  className="aspect-[1400/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                  className="aspect-[1400/845] w-[68.5625rem] bg-gradient-to-tr from-[#B9F6CA] to-[#00C853] opacity-20"
                 />
               </div>
               <div className="grid max-w-screen-xl mx-auto pt-24 pb-4">
