@@ -1,4 +1,3 @@
-'use-client'
 import 'slick-carousel/slick/slick.css';
 import { useState } from 'react';
 import Slider from 'react-slick';
