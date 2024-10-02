@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { testimonials, services, values } from '../src/constants'
 import { therapy, mission1, mission2, mission3, mission4 } from '../images'
+import Testimonials from "../src/Components/Testimonials";
 
 export const meta: MetaFunction = () => {
   return [
@@ -126,7 +127,8 @@ export default function Index() {
             </section>
 
             <section id="successStories">
-              <div
+              <Testimonials />
+              {/* <div
                 aria-hidden="true"
                 className="hidden absolute blur-3xl sm:-z-10 sm:mr-10 sm:block sm:transform-gpu "
               >
@@ -152,7 +154,7 @@ export default function Index() {
                     </div>
                   ))}
                 </div>
-              </div >
+              </div > */}
             </section>
           </div>
         </main>

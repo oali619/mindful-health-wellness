@@ -5,27 +5,10 @@ import {
 	DisclosureButton,
 	DisclosurePanel,
 } from '@headlessui/react';
-import { hssServiceTypes } from '../src/constants';
+import { armhsServiceTypes, armhsServiceCategories } from '../src/constants';
+import { puzzleBrain } from '../images';
 
 export default function Services() {
-	const hssServiceCategories = [
-		{ name: 'Housing Search' },
-		{ name: 'Financial Assistance' },
-		{ name: 'Eviction Protection' },
-		{ name: 'Tenant Education' },
-		{ name: 'And More' },
-	];
-	const armhsServiceCategories = [
-		{ name: 'Basic Living and Social Skills' },
-		{ name: 'Certified Peer Specialist Services' },
-		{ name: 'Community Intervention' },
-		{ name: 'Functional Assessment' },
-		{ name: 'Level of Care Assessment' },
-		{ name: 'Individual Treatment Plan' },
-		{ name: 'Medication Education' },
-		{ name: 'Transition to Community Living Services' },
-	];
-
 	const [disclosureIsOpen, setDisclosureIsOpen] = useState(false);
 
 	return (
@@ -43,18 +26,25 @@ export default function Services() {
 				/>
 			</div>
 			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
-				<div className='mx-auto max-w-2xl lg:mx-0'>
-					<h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-						What is ARMHS?
-					</h2>
-					<p className='mt-6 text-lg leading-8 text-gray-600'>
-						Adult Rehabilitative Mental Health Services (ARMHS) is a
-						strengths-based, person-centered, recovery-focused program with the
-						purpose of helping individuals with mental illness overcome
-						impairments caused by their symptoms in order to function
-						independently in their homes or places of residence. ARMHS can
-						provide individuals with support in the following areas:
-					</p>
+				<div className='mx-auto max-w-5xl lg:mx-0 flex justify-between'>
+					<div className='mx-auto max-w-2xl'>
+						<h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+							What is ARMHS?
+						</h2>
+						<p className='mt-6 text-lg leading-8 text-gray-600'>
+							Adult Rehabilitative Mental Health Services (ARMHS) is a
+							strengths-based, person-centered, recovery-focused program with
+							the purpose of helping individuals with mental illness overcome
+							impairments caused by their symptoms in order to function
+							independently in their homes or places of residence. ARMHS can
+							provide individuals with support in the following areas:
+						</p>
+					</div>
+					<img
+						src={puzzleBrain}
+						alt='puzzle brain'
+						className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'
+					/>
 				</div>
 				<div className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'>
 					<div className='text-base font-semibold leading-7 text-gray-600 indent-8'>
@@ -64,14 +54,14 @@ export default function Services() {
 					</div>
 					{/* TODO: need to do something here label or something or redesign this */}
 					<p className='text-4xl font-bold mt-16 sm:mt-20 mb-4 tracking-tight text-gray-900 text-center'>
-						TLDR;
+						Client Rehab Services
 					</p>
 					<div className='grid grid-cols-1 gap-8 sm:grid-cols-4'>
-						{hssServiceTypes.map((hssServiceType) => (
-							<div key={hssServiceType.name}>
+						{armhsServiceTypes.map((armhsServiceType) => (
+							<div key={armhsServiceType.name}>
 								<Disclosure as='div' className='pb-6'>
 									<DisclosureButton className='group flex items-center justify-between gap-2 font-semibold text-gray-700'>
-										{hssServiceType.name}
+										{armhsServiceType.name}
 										{/* TODO: fix the onClick functionality changing all + to - */}
 										{/* clicking the name opens accordian but doesn't change +/- */}
 										{disclosureIsOpen ? (
@@ -109,7 +99,7 @@ export default function Services() {
 										)}
 									</DisclosureButton>
 									<DisclosurePanel className='tracking-tight text-gray-500'>
-										{hssServiceType.value}
+										{armhsServiceType.value}
 									</DisclosurePanel>
 								</Disclosure>
 							</div>

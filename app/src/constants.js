@@ -17,10 +17,22 @@ export const employees = [
 		img: 'https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500',
 	},
 	{
+		name: 'Lensa Ali, MD',
+		role: 'Clical Supervisor',
+		location: 'Greater Minneapolis/St. Paul',
+		img: 'https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500',
+	},
+	{
 		name: 'Dunia Ahmed, LICSW',
 		role: 'Clical Supervisor',
 		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500',
+	},
+	{
+		name: 'Hunnan Khan, PA',
+		role: 'ARMHS Practitioner',
+		location: 'Greater Minneapolis/St. Paul',
+		img: 'https://tailwindui.com/img/logos/mark.svg?color=green&shade=500',
 	},
 	{
 		name: 'Ismail Ali',
@@ -90,27 +102,38 @@ export const services = [
 	},
 ];
 
-export const hssServiceTypes = [
+export const armhsServiceTypes = [
 	{
-		name: 'Eligibility',
+		name: 'Diagnostic Assessment',
 		value:
-			'Qualified recipients must be receiving Medical Assistance(MA)/Have Private Insurance, be 18 years or older and have disabilities or are seniors (65 and older) who require assistance to find and/or keep housing.',
+			'Diagnostic assessment is a comprehensive evaluation of a person’s mental health, substance use, and physical health needs.',
 	},
 	{
-		name: 'Housing Consultation',
+		name: 'Functional Assessment',
 		value:
-			'People who do not have waiver or targeted case management or a MSHO/MSC+ care coordinator, but need Housing Stabilization Services, can complete the person-centered planning needed through an enrolled housing consultant.',
+			'Functional assessment is a comprehensive evaluation of a person’s mental health, substance use, and physical health needs.',
 	},
 	{
-		name: 'Housing Transitioning',
+		name: 'Individual Treatment Plan',
 		value:
-			'Services that assist a person to plan for, find, and move to a home in the community.',
+			'Individual treatment plan is a written plan that outlines the goals and objectives of a person’s mental health treatment.',
 	},
 	{
-		name: 'Housing Sustaining',
+		name: 'Progress Notes',
 		value:
-			'Services that supports a person to maintain living in their home in the community.',
+			'Progress notes are written records of a person’s mental health treatment, including the services provided and the person’s progress.',
 	},
+];
+
+export const armhsServiceCategories = [
+	{ name: 'Basic Living and Social Skills' },
+	{ name: 'Certified Peer Specialist Services' },
+	{ name: 'Community Intervention' },
+	{ name: 'Functional Assessment' },
+	{ name: 'Level of Care Assessment' },
+	{ name: 'Individual Treatment Plan' },
+	{ name: 'Medication Education' },
+	{ name: 'Transition to Community Living Services' },
 ];
 
 export const values = [
