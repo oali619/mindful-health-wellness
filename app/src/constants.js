@@ -179,7 +179,7 @@ export const employees = [
 		img: 'https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500',
 	},
 	{
-		name: 'Hunnan Khan, PA',
+		name: 'Hunnaan Khan, PA',
 		role: 'ARMHS Practitioner',
 		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/img/logos/mark.svg?color=green&shade=500',

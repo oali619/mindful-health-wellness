@@ -38,8 +38,8 @@ export async function action({ request }: ActionFunctionArgs) {
 
 	const resend = new Resend(process.env.RESEND_API_KEY);
 	const response = await resend.emails.send({
-		from: 'admin@alliedhealthmn.com',
-		to: 'referral@alliedhealthmn.com',
+		from: 'admin@mindfulhealthmn.org',
+		to: 'referral@mindfulhealthmn.org',
 		subject: 'New Referral',
 		react: <EmailTemplate options={data} referral={true} />,
 		attachments: [
