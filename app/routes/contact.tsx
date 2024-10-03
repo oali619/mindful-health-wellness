@@ -190,7 +190,7 @@ export default function Contact() {
 								<Switch
 									checked={agreed}
 									onChange={setAgreed}
-									className='group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-indigo-600'
+									className='group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 data-[checked]:bg-green-600'
 								>
 									<span className='sr-only'>Agree to policies</span>
 									<span
@@ -201,7 +201,7 @@ export default function Contact() {
 							</div>
 							<Label className='text-sm leading-6 text-gray-600'>
 								By selecting this, you agree to our{' '}
-								<a href='#' className='font-semibold text-indigo-600'>
+								<a href='#' className='font-semibold text-green-600'>
 									privacy&nbsp;policy
 								</a>
 								.
@@ -211,7 +211,7 @@ export default function Contact() {
 					<div className='mt-10'>
 						<button
 							type='submit'
-							className='block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+							className='block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
 						>
 							Send
 						</button>

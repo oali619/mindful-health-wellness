@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { services, values } from '../src/constants';
 import { therapy, mission1, mission2, mission3, mission4 } from '../images';
 import Testimonials from '../src/Components/Testimonials';
+import Footer from '~/src/Components/Footer';
 
 export const meta: MetaFunction = () => {
 	return [
@@ -161,34 +162,10 @@ export default function Index() {
 						</section>
 
 						<section id='successStories'>
-            {isClient && <Testimonials />}
-							{/* <div
-                aria-hidden="true"
-                className="hidden absolute blur-3xl sm:-z-10 sm:mr-10 sm:block sm:transform-gpu "
-              >
-                <div
-                  style={{
-                    clipPath:
-                      'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                  }}
-                  className="aspect-[1400/845] w-[68.5625rem] bg-gradient-to-tr from-[#B9F6CA] to-[#00C853] opacity-20"
-                />
-              </div>
-              <div className="grid max-w-screen-xl mx-auto pt-24 pb-4">
-                <h2 className="text-5xl font-bold text-gray-900 place-self-center">Success Stories</h2>
-                <div className="flex flex-col lg:flex-row items-center lg:items-stretch">
-                  {testimonials.map((testimonial, index) => (
-                    <div className="mt-8 lg:w-1/3" key={index}>
-                      <div className="px-4 text-center max-w-xs mx-auto flex flex-col items-center">
-                        <img className="w-20 h-20 rounded-full" src={testimonial.img} alt="Tailwind logo" />
-                        <blockquote className="mt-5 text-gray-600 font-medium leading-loose">{testimonial.quote}</blockquote>
-                        <p className="mt-5 text-gray-700 font-semibold uppercase text-sm tracking-wide">- {testimonial.client}</p>
-                        <p className="text-gray-700 font-semibold uppercase text-sm tracking-wide">{testimonial.location}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div > */}
+							{isClient && <Testimonials />}
+						</section>
+						<section id='footer'>
+							<Footer />
 						</section>
 					</div>
 				</main>

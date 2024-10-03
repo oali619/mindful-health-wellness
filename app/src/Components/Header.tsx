@@ -6,12 +6,12 @@ import {
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { navigation } from '../constants';
+import { logo } from '../../images';
 
 function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(' ');
 }
 
-import { logo } from '../../images';
 
 export default function Header() {
 	return (
