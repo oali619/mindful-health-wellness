@@ -1,13 +1,13 @@
 import type { MetaFunction } from '@remix-run/node';
 import { useState, useEffect } from 'react';
-import { testimonials, services, values } from '../src/constants';
+import { services, values } from '../src/constants';
 import { therapy, mission1, mission2, mission3, mission4 } from '../images';
 import Testimonials from '../src/Components/Testimonials';
 
 export const meta: MetaFunction = () => {
 	return [
 		{ title: 'Mindful Health and Wellness' },
-		{ name: 'description', content: 'Welcome to Remix!' },
+		{ name: 'description', content: 'Welcome to our mental health site!' },
 	];
 };
 

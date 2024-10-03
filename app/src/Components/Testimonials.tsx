@@ -1,31 +1,11 @@
 import 'slick-carousel/slick/slick.css';
 import { useState } from 'react';
 import Slider from 'react-slick';
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { testimonials } from '../constants';
+// import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export default function Testimonials() {
 	const [sliderRef, setSliderRef] = useState(null);
-	const testimonials = [
-		{
-			profileImageSrc:
-				'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
-			heading: 'Amazing User Experience',
-			quote:
-				'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-			customerName: 'Charlotte Hale',
-			customerTitle: 'CEO, Delos Inc.',
-		},
-		{
-			profileImageSrc:
-				'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
-			heading: 'Love the Developer Experience and Design Principles !',
-			quote:
-				'Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-			customerName: 'Adam Cuppy',
-			customerTitle: 'Founder, EventsNYC',
-		},
-	];
-
 	return (
 		<div className='relative'>
 			<div className='max-w-screen-xl mx-auto py-20 lg:py-24'>
@@ -40,23 +20,22 @@ export default function Testimonials() {
 					</div>
 					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-7/12 xl:w-6/12 mt-16 md:mt-0 md:pl-12 lg:pl-16 md:order-last'>
 						<h5 className='font-bold text-primary-500 text-center md:text-left'>
-							Testimonials
+							Success Stories
 						</h5>
 						<h2 className='text-4xl sm:text-5xl font-black tracking-wide text-center mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight'>
 							Our Clients Love Us.
 						</h2>
 						<p className='mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-							minim veniam.
+							Here is what our clients have to say about us. We are proud to
+							have helped them achieve their goals:
 						</p>
-						<Slider>
+						<Slider autoplay pauseOnHover arrows={false}>
 							{testimonials.map((testimonial, index) => (
 								<div className='outline-none h-full flex flex-col' key={index}>
 									<div className='mt-4 text-xl font-bold'>
 										{testimonial.heading}
 									</div>
-									<blockquote className='mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-gray-700'>
+									<blockquote className='text-center mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-gray-700'>
 										{testimonial.quote}
 									</blockquote>
 									<div className='mt-auto flex justify-between items-center flex-col sm:flex-row'>
@@ -71,25 +50,25 @@ export default function Testimonials() {
 													{testimonial.customerName}
 												</h5>
 												<p className='font-medium text-secondary-100'>
-													{testimonial.customerTitle}
+													{testimonial.customerLocation}
 												</p>
 											</div>
 										</div>
-										<div className='flex mt-8 sm:mt-0'>
+										{/* <div className='flex mt-8 sm:mt-0'>
 											<button
 												className='mx-3 p-4 rounded-full transition duration-300 bg-gray-200 hover:bg-gray-300 text-primary-500 hover:text-primary-700 focus:outline-none focus:shadow-outline'
-												//   onClick={sliderRef?.slickPrev}
+												  onClick={sliderRef?.slickPrev}
 											>
 												<ArrowLeftIcon />
 											</button>
 											<div className='divider' />
 											<button
 												className='mx-3 p-4 rounded-full transition duration-300 bg-gray-200 hover:bg-gray-300 text-primary-500 hover:text-primary-700 focus:outline-none focus:shadow-outline'
-												//   onClick={sliderRef?.slickNext}
+												  onClick={sliderRef?.slickNext}
 											>
 												<ArrowRightIcon />
 											</button>
-										</div>
+										</div> */}
 									</div>
 								</div>
 							))}
