@@ -3,28 +3,24 @@ import { useState } from 'react';
 import Slider from 'react-slick';
 import { testimonials } from '../constants';
 // import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { love } from '../../images';
 
 export default function Testimonials() {
 	const [sliderRef, setSliderRef] = useState(null);
 	return (
-		<div className='relative'>
-			<div className='max-w-screen-xl mx-auto py-20 lg:py-24'>
-				<div className='flex flex-col md:flex-row justify-between items-center'>
+		<div>
+			<div className='mx-auto py-20 lg:py-24 -z-10'>
+				<h2 className='text-5xl font-bold text-gray-900 text-center'>
+					Success Stories
+				</h2>
+				<div className='flex flex-col md:flex-row justify-between items-center py-8'>
 					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-5/12 xl:w-6/12 flex-shrink-0 relative'>
-						<img
-							className='rounded'
-							src={
-								'https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg'
-							}
-						/>
+						<img className='rounded' src={love} />
 					</div>
 					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-7/12 xl:w-6/12 mt-16 md:mt-0 md:pl-12 lg:pl-16 md:order-last'>
-						<h5 className='font-bold text-primary-500 text-center md:text-left'>
-							Success Stories
-						</h5>
-						<h2 className='text-4xl sm:text-5xl font-black tracking-wide text-center mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight'>
+						<h5 className='text-3xl sm:text-4xl font-black tracking-wide text-center mt-4 font-black text-left text-2xl sm:text-3xl lg:text-4xl text-center md:text-left leading-tight'>
 							Our Clients Love Us.
-						</h2>
+						</h5>
 						<p className='mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100'>
 							Here is what our clients have to say about us. We are proud to
 							have helped them achieve their goals:

@@ -12,7 +12,7 @@ export default function Services() {
 	const [disclosureIsOpen, setDisclosureIsOpen] = useState(false);
 
 	return (
-		<div className='overflow-hidden  py-24 sm:py-32'>
+		<div className='overflow-hidden py-24 sm:py-32'>
 			<div
 				aria-hidden='true'
 				className='hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl'
@@ -26,11 +26,11 @@ export default function Services() {
 				/>
 			</div>
 			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
-				<div className='mx-auto max-w-5xl lg:mx-0 flex justify-between'>
-					<div className='mx-auto max-w-2xl'>
-						<h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-							What is ARMHS?
-						</h2>
+				<div className='mx-auto max-w-5xl lg:mx-0 grid'>
+					<h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+						What is ARMHS?
+					</h2>
+					<div className='mx-auto max-w-2xl sm:row-start-2'>
 						<p className='mt-6 text-lg leading-8 text-gray-600'>
 							Adult Rehabilitative Mental Health Services (ARMHS) is a
 							strengths-based, person-centered, recovery-focused program with
@@ -43,11 +43,11 @@ export default function Services() {
 					<img
 						src={puzzleBrain}
 						alt='puzzle brain'
-						className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'
+						className='mx-10 my-10 lg:mx-0 lg:max-w-none row-start-2'
 					/>
 				</div>
 				<div className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'>
-					<div className='text-base font-semibold leading-7 text-gray-600 indent-8'>
+					<div className='text-base font-semibold leading-7 text-gray-600 indent-8 '>
 						{armhsServiceCategories.map((service) => (
 							<li key={service.name}>{service.name}</li>
 						))}
@@ -112,7 +112,7 @@ export default function Services() {
 					</h2>
 					<Link
 						to='/referral'
-						className='bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded flex w-[147px]'
+						className='bg-green-800 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded flex w-[147px]'
 					>
 						Refer Client
 						<svg

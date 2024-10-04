@@ -36,9 +36,10 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=id_058153#P22_1124'
+									target='_blank'
 								>
-									Blog
+									Resources
 								</a>
 							</li>
 							<li className='mt-3'>
@@ -52,17 +53,17 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='#mission'
 								>
-									Support
+									Values
 								</a>
 							</li>
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='#suceessStories'
 								>
-									About Us
+									Testimonials
 								</a>
 							</li>
 						</ul>
@@ -73,31 +74,32 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/referral'
 								>
-									Log In
+									Referral
 								</a>
 							</li>
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/services'
 								>
-									Personal
+									Services
 								</a>
 							</li>
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='www.alliedhealthmn.com'
+									target='_blank'
 								>
-									Business
+									HSS
 								</a>
 							</li>
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/team'
 								>
 									Team
 								</a>
@@ -112,7 +114,7 @@ export default function Footer2() {
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
 									href='#'
 								>
-									GDPR
+									HIPAA Compliance
 								</a>
 							</li>
 							<li className='mt-3'>
@@ -128,7 +130,7 @@ export default function Footer2() {
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
 									href='#'
 								>
-									Terms of Service
+									QAP
 								</a>
 							</li>
 							<li className='mt-3'>
@@ -156,17 +158,17 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/contact'
 								>
-									Sales
+									Contact Form
 								</a>
 							</li>
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/contact'
 								>
-									Report Abuse
+									File a Complaint
 								</a>
 							</li>
 						</ul>
