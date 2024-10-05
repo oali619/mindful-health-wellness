@@ -1,6 +1,3 @@
-import React from 'react';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-
 import { logo } from '../../images';
 
 export default function Footer2() {
@@ -18,17 +15,6 @@ export default function Footer2() {
 						<p className='mt-4 max-w-xs font-medium text-sm mx-auto lg:mx-0 lg:mr-4 leading-loose text-center lg:text-left'>
 							6040 Earle Brown Dr Ste 310B Brooklyn Center, Minnesota 55430
 						</p>
-						{/* <div className='mt-4 text-center lg:text-left'>
-							<SocialLink href='https://facebook.com'>
-								<FacebookIcon />
-							</SocialLink>
-							<SocialLink href='https://twitter.com'>
-								<TwitterIcon />
-							</SocialLink>
-							<SocialLink href='https://youtube.com'>
-								<YoutubeIcon />
-							</SocialLink>
-						</div> */}
 					</div>
 					<div className='w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left'>
 						<div className='font-bold uppercase'>Quick Links</div>
@@ -112,7 +98,7 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/legal'
 								>
 									HIPAA Compliance
 								</a>
@@ -120,7 +106,7 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/legal'
 								>
 									Privacy Policy
 								</a>
@@ -128,7 +114,7 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/legal'
 								>
 									QAP
 								</a>
@@ -136,7 +122,7 @@ export default function Footer2() {
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='#'
+									href='/legal'
 								>
 									Disclaimer
 								</a>
