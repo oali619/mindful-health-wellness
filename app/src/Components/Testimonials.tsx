@@ -9,12 +9,13 @@ export default function Testimonials() {
 	const [sliderRef, setSliderRef] = useState(null);
 	return (
 		<div>
-			<div className='mx-auto py-20 lg:py-24 -z-10'>
+			<div className='mx-auto py-8 -z-10'>
+				<div className='mb-2 border-b border-green-900/10'/>
 				<h2 className='text-5xl font-bold text-gray-900 text-center'>
 					Success Stories
 				</h2>
 				<div className='flex flex-col md:flex-row justify-between items-center py-8'>
-					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-5/12 xl:w-6/12 flex-shrink-0 relative'>
+					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-5/12 xl:w-6/12 flex-shrink-0 relative -z-[1]'>
 						<img className='rounded' src={love} />
 					</div>
 					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-7/12 xl:w-6/12 mt-16 md:mt-0 md:pl-12 lg:pl-16 md:order-last'>

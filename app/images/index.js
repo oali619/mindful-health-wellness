@@ -8,7 +8,7 @@ import mission4 from './mission4.jpg';
 import logo from './logo.png';
 import helpingHand from './helping-hand.jpg';
 import housing from './housing.jpeg';
-import love from './love.svg';
+import love from './love.png';
 
 export {
 	puzzleBrain,

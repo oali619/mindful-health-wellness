@@ -49,6 +49,7 @@ export default function Index() {
 
 					<div className='mx-auto max-w-8xl px-4 py-6 sm:px-6 lg:px-8'>
 						<section className='grid' id='services'>
+							<div className='mb-2 border-b border-green-900/10'/>
 							<h2 className='text-5xl font-bold text-gray-900 place-self-center'>
 								Our Services
 							</h2>
@@ -100,6 +101,7 @@ export default function Index() {
 									className='aspect-[1400/845] w-[68.5625rem] bg-gradient-to-tr from-[#B9F6CA] to-[#00C853] opacity-20'
 								/>
 							</div>
+							<div className='mb-2 border-b border-green-900/10'/>
 							<h2 className='text-5xl font-bold text-gray-900 place-self-center'>
 								Mission & Values
 							</h2>

@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 import { ActionFunctionArgs } from '@remix-run/node';
 import { useActionData } from '@remix-run/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Field, Label, Switch } from '@headlessui/react';
+import { Field, Switch } from '@headlessui/react';
 import { toast } from 'sonner';
 import EmailTemplate from '~/src/Components/EmailTemplate';
 
@@ -79,7 +79,7 @@ export default function Contact() {
 									name='first-name'
 									type='text'
 									autoComplete='given-name'
-									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 								/>
 							</div>
 						</div>
@@ -96,7 +96,7 @@ export default function Contact() {
 									name='last-name'
 									type='text'
 									autoComplete='family-name'
-									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 								/>
 							</div>
 						</div>
@@ -113,7 +113,7 @@ export default function Contact() {
 									name='company'
 									type='text'
 									autoComplete='organization'
-									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 								/>
 							</div>
 						</div>
@@ -130,7 +130,7 @@ export default function Contact() {
 									name='email'
 									type='email'
 									autoComplete='email'
-									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 								/>
 							</div>
 						</div>
@@ -149,7 +149,7 @@ export default function Contact() {
 									<select
 										id='country'
 										name='country'
-										className='h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm'
+										className='h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm'
 									>
 										<option>US</option>
 										<option>CA</option>
@@ -164,7 +164,7 @@ export default function Contact() {
 									name='phone-number'
 									type='tel'
 									autoComplete='tel'
-									className='block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+									className='block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 								/>
 							</div>
 						</div>
@@ -180,7 +180,7 @@ export default function Contact() {
 									id='message'
 									name='message'
 									rows={4}
-									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+									className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 									defaultValue={''}
 								/>
 							</div>
@@ -199,19 +199,23 @@ export default function Contact() {
 									/>
 								</Switch>
 							</div>
-							<Label className='text-sm leading-6 text-gray-600'>
+							<div className='text-sm leading-6 text-gray-600'>
 								By selecting this, you agree to our{' '}
-								<a href='#' className='font-semibold text-green-600'>
+								<a
+									href='/legal'
+									target='_blank'
+									className='font-semibold text-green-600'
+								>
 									privacy&nbsp;policy
 								</a>
 								.
-							</Label>
+							</div>
 						</Field>
 					</div>
 					<div className='mt-10'>
 						<button
 							type='submit'
-							className='block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+							className='block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600'
 						>
 							Send
 						</button>
