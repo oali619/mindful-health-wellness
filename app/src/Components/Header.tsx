@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from '@remix-run/react';
 import {
 	Disclosure,
@@ -12,8 +13,8 @@ function classNames(...classes: string[]) {
 	return classes.filter(Boolean).join(' ');
 }
 
-
 export default function Header() {
+	const [currentNavIndex, setCurrentNavIndex] = useState(0);
 	return (
 		<div className='min-h-full'>
 			<Disclosure as='nav' className='bg-green-800 fixed top-0 left-0 right-0'>
@@ -29,29 +30,27 @@ export default function Header() {
 							</Link>
 							<div className='hidden md:block'>
 								<div className='ml-10 flex items-baseline space-x-4'>
-									{navigation.map((item) => (
-										<Link
-											key={item.name}
-											to={item.to}
-											aria-current={item.current ? 'page' : undefined}
-											// TODO: Fix the onClick logic
-											onClick={() => {
-												navigation.forEach((nav) =>
-													nav.name === item.name
-														? (item.current = true)
-														: (item.current = false)
-												);
-											}}
-											className={classNames(
-												item.current
-													? 'bg-green-700 text-white'
-													: 'text-white hover:bg-green-700',
-												'rounded-md px-3 py-2 text-sm font-medium'
-											)}
-										>
-											{item.name}
-										</Link>
-									))}
+									{navigation.map((item, index) => {
+										const current = index === currentNavIndex;
+										return (
+											<Link
+												key={item.name}
+												to={item.to}
+												aria-current={current ? 'page' : undefined}
+												onClick={() => {
+													setCurrentNavIndex(index);
+												}}
+												className={classNames(
+													current
+														? 'bg-green-700 text-white'
+														: 'text-white hover:bg-green-700',
+													'rounded-md px-3 py-2 text-sm font-medium'
+												)}
+											>
+												{item.name}
+											</Link>
+										);
+									})}
 								</div>
 							</div>
 						</div>

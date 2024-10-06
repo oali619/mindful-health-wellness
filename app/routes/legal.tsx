@@ -19,12 +19,14 @@ export default function Legal() {
 				{legalTexts.map((legalText, index) => (
 					<div
 						key={index}
-						onClick={() => {
-							toggleQuestion(index);
-						}}
-						className='group cursor-pointer select-none mt-5 px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800 hover:text-gray-900 bg-gray-200 hover:bg-gray-300 transition duration-300'
+						className='group mt-5 px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800 hover:text-gray-900 bg-gray-200 hover:bg-gray-300 transition duration-300'
 					>
-						<dt className='flex justify-between items-center'>
+						<dt
+							onClick={() => {
+								toggleQuestion(index);
+							}}
+							className='flex justify-between items-center cursor-pointer'
+						>
 							<span className='text-lg lg:text-xl font-semibold'>
 								{legalText.heading}
 							</span>
@@ -32,7 +34,7 @@ export default function Legal() {
 							<ChevronUpDownIcon className='w-6 h-6' />
 						</dt>
 						{activeQuestionIndex === index && (
-							<dd className='mt-4 pointer-events-none text-sm sm:text-base leading-relaxed'>
+							<dd className='mt-4 text-sm sm:text-base leading-relaxed'>
 								{legalText.element}
 							</dd>
 						)}

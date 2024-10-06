@@ -231,7 +231,7 @@ export const legalTexts = [
 			<div>
 				<i>Last updated: 10.1.2024</i>
 				<p>
-					At Mindfol Health and Welnness, we are committed to maintaining the
+					At Mindful Health and Wellness, we are committed to maintaining the
 					privacy and protection of your personal information. This Privacy
 					Policy outlines how we collect, use, disclose, and safeguard your
 					information in accordance with applicable laws, including the Health
@@ -239,8 +239,10 @@ export const legalTexts = [
 					and state regolations.
 				</p>
 				<b>Information We Collect</b>
-				<p>We collect and maintain both personal and health-related information
-				from you, which may include:</p>
+				<p>
+					We collect and maintain both personal and health-related information
+					from you, which may include:
+				</p>
 				<ol>
 					<li>
 						Personal Information: Name, address, phone number, email address,
@@ -273,9 +275,11 @@ export const legalTexts = [
 					</li>
 				</ol>
 				<b>Disclosure of Information</b>
-				<p>We will not disclose your personal or health information without your
-				consent unless permitted or required by law. The instances where we may
-				disclose information include:</p>
+				<p>
+					We will not disclose your personal or health information without your
+					consent unless permitted or required by law. The instances where we
+					may disclose information include:
+				</p>
 				<ol>
 					<li>
 						For Treatment: To other healthcare providers involved in your care.
@@ -295,8 +299,10 @@ export const legalTexts = [
 					</li>
 				</ol>
 				<b>How We Protect Your Information</b>
-				<p>We employ a variety of security measures to ensure the protection of
-				your personal and health information:</p>
+				<p>
+					We employ a variety of security measures to ensure the protection of
+					your personal and health information:
+				</p>
 				<ol>
 					<li>
 						Physical security measures, such as secured facilities and locked
@@ -312,8 +318,10 @@ export const legalTexts = [
 					</li>
 				</ol>
 				<h2>Your Rights</h2>
-				<p>You have specific rights regarding your personal and health information,
-				including:</p>
+				<p>
+					You have specific rights regarding your personal and health
+					information, including:
+				</p>
 				<ol>
 					<li>
 						Access: You may request to review or obtain a copy of your health
@@ -337,22 +345,29 @@ export const legalTexts = [
 					</li>
 				</ol>
 				<h2>Retention of Data</h2>
-				<p>We retain your personal and health information for as long as necessary
-				to provide services, comply with legal obligations, resolve disputes,
-				and enforce our agreements. When no longer required, your data will be
-				securely destroyed in accordance with legal and regolatory guidelines.</p>
+				<p>
+					We retain your personal and health information for as long as
+					necessary to provide services, comply with legal obligations, resolve
+					disputes, and enforce our agreements. When no longer required, your
+					data will be securely destroyed in accordance with legal and
+					regolatory guidelines.
+				</p>
 				<h2>Changes to This Policy</h2>
-				<p>We may update this Privacy Policy from time to time. Any changes will be
-				posted on our website, and we encourage you to review the policy
-				periodically to stay informed about how we are protecting your
-				information.</p>
+				<p>
+					We may update this Privacy Policy from time to time. Any changes will
+					be posted on our website, and we encourage you to review the policy
+					periodically to stay informed about how we are protecting your
+					information.
+				</p>
 				<h2>Contact Us</h2>
-				<p>If you have any questions or concerns regarding this Privacy Policy or
-				your rights, please contact us at:</p>
-				<p>Mindfol Health and Wellness</p>
+				<p>
+					If you have any questions or concerns regarding this Privacy Policy or
+					your rights, please contact us at:
+				</p>
+				<p>Mindful Health and Wellness</p>
 				<p>6040 Earle Brown Dr. Suite 310B Brooklyn Center, MN 55430 </p>
 				<p>Phone: 612.990.3110</p>
-				<p>Email: admin@mindfolhealthmn.org</p>
+				<p>Email: admin@mindfulhealthmn.org</p>
 				<p>
 					This privacy policy ensures you are transparent about how you manage
 					client data while remaining compliant with HIPAA and other
@@ -366,7 +381,7 @@ export const legalTexts = [
 		element: (
 			<div>
 				<p>
-					Mindfol Health and Wellness LLC (ARMHS Provider) is committed to
+					Mindful Health and Wellness LLC (ARMHS Provider) is committed to
 					protecting the privacy and security of your protected health
 					information (PHI) in compliance with the Health Insurance Portability
 					and Accountability Act (HIPAA). We adhere to all state and federal
@@ -404,10 +419,24 @@ export const legalTexts = [
 				</ol>
 				<p>
 					For more information on our privacy practices or to report a concern,
-					please contact us at admin@mindfolhealthmn.org
+					please contact us at admin@mindfulhealthmn.org
 				</p>
 			</div>
 		),
 	},
-	{ heading: 'Quality Assurance Plan', element: 'download attachment' },
+	{
+		heading: 'Quality Assurance Plan',
+		element: (
+			<p>
+				Click to download our {' '}
+				<a
+					href='/QualityAssurancePlan.pdf'
+					download='QualityAssurancePlan.pdf'
+					className='underline'
+				>
+					Quality Assurance Plan.pdf
+				</a>
+			</p>
+		),
+	},
 ];
