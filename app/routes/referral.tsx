@@ -41,19 +41,21 @@ export async function action({ request }: ActionFunctionArgs) {
 	);
 	const data = Object.fromEntries(formData.entries());
 	const file = data.attachments as File;
-
+	console.log({ data });
 	const resend = new Resend(process.env.RESEND_API_KEY);
 	const response = await resend.emails.send({
 		from: 'admin@mindfulhealthmn.org',
 		to: 'referral@mindfulhealthmn.org',
-		subject: 'New Referral',
+		subject: `New Referral - ${data.clientName}`,
 		react: <EmailTemplate options={data} referral={true} />,
-		attachments: [
-			{
-				filename: file.name,
-				content: Buffer.from(await file.arrayBuffer()),
-			},
-		],
+		attachments: file.size
+			? [
+					{
+						filename: file.name,
+						content: Buffer.from(await file.arrayBuffer()),
+					},
+			  ]
+			: null,
 	});
 	return response;
 }
@@ -172,8 +174,8 @@ export default function Referral() {
 							</label>
 							<div className='mt-2'>
 								<input
-									id='referrername'
-									name='referrername'
+									id='referrerName'
+									name='referrerName'
 									className='block w-full indent-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 									placeholder='John Doe'
 								/>
@@ -188,8 +190,8 @@ export default function Referral() {
 							</label>
 							<div className='mt-2'>
 								<input
-									id='referrernumber'
-									name='referrernumber'
+									id='referrerPhoneNumber'
+									name='referrerPhoneNumber'
 									className='block w-full indent-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
 									placeholder='123-456-7890'
 								/>
@@ -220,15 +222,15 @@ export default function Referral() {
 						<div className='mt-10 grid grid-cols-2 sm:grid-cols-6 gap-x-4 gap-y-2'>
 							<div className='col-span-1 sm:col-span-2'>
 								<label
-									htmlFor='fullname'
+									htmlFor='clientName'
 									className='block text-sm font-medium leading-6 text-gray-900'
 								>
 									Client Name
 								</label>
 								<div className='mt-2'>
 									<input
-										id='fullname'
-										name='fullname'
+										id='clientName'
+										name='clientName'
 										type='text'
 										placeholder='John Doe'
 										autoComplete='given-name'
@@ -263,8 +265,8 @@ export default function Referral() {
 								</label>
 								<div className='mt-2'>
 									<input
-										id='number'
-										name='number'
+										id='clientPhoneNumber'
+										name='clientPhoneNumber'
 										type='text'
 										placeholder='123-456-7890'
 										className='block w-full indent-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'
@@ -281,8 +283,8 @@ export default function Referral() {
 								</label>
 								<div className='mt-2'>
 									<input
-										id='email'
-										name='email'
+										id='clientEmail'
+										name='clientEmail'
 										type='email'
 										autoComplete='email'
 										placeholder='johndoe@email.com'
@@ -490,8 +492,8 @@ export default function Referral() {
 								</label>
 								<div className='mt-2'>
 									<input
-										id='number'
-										name='number'
+										id='pmiNumber'
+										name='pmiNumber'
 										type='text'
 										placeholder='00000000'
 										className='block w-full indent-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6'

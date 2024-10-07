@@ -23,7 +23,7 @@ export default function Header() {
 						<div className='flex items-center'>
 							<Link to='/' className='flex-shrink-0'>
 								<img
-									alt='Allied Health Services Logo'
+									alt='Mindful Health & Wellness Logo'
 									src={logo}
 									className='h-16 w-16'
 								/>
