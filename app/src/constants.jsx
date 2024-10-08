@@ -1,4 +1,4 @@
-import { dhsImage, helpingHand, housing } from '../images';
+import { dhsImage, rehab, housing } from '../images';
 
 export const navigation = [
 	{ name: 'Home', to: '/', current: true },
@@ -13,7 +13,7 @@ export const services = [
 	{
 		name: 'Adolt Rehabilitation Mental Health Services',
 		description: 'Mental health recovery services for adolts',
-		imageSrc: helpingHand,
+		imageSrc: rehab,
 		imageAlt: 'Therapist sitting and listening to a patient',
 		href: '/services',
 	},

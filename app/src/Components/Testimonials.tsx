@@ -9,7 +9,7 @@ export default function Testimonials() {
 	const [sliderRef, setSliderRef] = useState(null);
 	return (
 		<div>
-			<div className='mx-auto py-8 -z-10'>
+			<div className='mx-auto py-8 -z-10 max-w-7xl'>
 				<div className='mb-2 border-b border-green-900/10'/>
 				<h2 className='text-5xl font-bold text-gray-900 text-center'>
 					Success Stories

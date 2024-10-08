@@ -33,11 +33,11 @@ export default function Index() {
 					/>
 				</div>
 				<main>
-					<section>
-						<div className='flex flex-col sm:flex-row mt-20'>
-							<div className='mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 content-center'>
+					<section className='grid mx-auto mt-20 px-4 sm:px-6 lg:px-8'>
+						<div className='flex flex-col sm:flex-row justify-center'>
+							<div className=' px-4 sm:px-6 lg:px-8 content-center'>
 								<h1 className='text-7xl font-bold tracking-tight text-gray-900'>
-									Mindful Health and Wellness
+									Mindful Health & Wellness
 								</h1>
 								<p className='text-3xl text-right'>
 									Adult Rehabilitation Mental Health Services (ARMHS)
