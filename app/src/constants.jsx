@@ -72,7 +72,7 @@ export const testimonials = [
 			'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
 		heading: 'Compassion and Professionalism',
 		quote:
-			'Mindful Health & Wellness has been a lifesaver for me and my family. After struggling with housing instability for years, their team stepped in and provided us with the support and resources we desperately needed. Thanks to their guidance, we were able to secure a safe, affordable home and start rebuilding our lives. I’m so gratefol for their compassionate and professional approach!',
+			'Mindful Health & Wellness has been a lifesaver for me and my family. After struggling with housing instability for years, their team stepped in and provided us with the support and resources we desperately needed. Thanks to their guidance, we were able to secure a safe, affordable home and start rebuilding our lives. I’m so grateful for their compassionate and professional approach!',
 		customerName: 'Anonymous Client',
 		customerLocation: 'Brooklyn Center, MN',
 	},
@@ -90,7 +90,7 @@ export const testimonials = [
 			'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
 		heading: '10/10 Experience!',
 		quote:
-			'Working with Mindful Health & Wellness has been an incredible experience. Their staff is knowledgeable, kind, and genuinely invested in helping people succeed. They took the time to understand my situation and tailored their services to fit my needs. Because of their hard work and dedication, I now have a stable home and the peace of mind that comes with it."',
+			'Working with Mindful Health & Wellness has been an incredible experience. Their staff is knowledgeable, kind, and genuinely invested in helping people succeed. They took the time to understand my situation and tailored their services to fit my needs. Because of their hard work and dedication, I now have a stable home and the peace of mind that comes with it.',
 		customerName: 'Anonymous Client',
 		customerLocation: 'Burnsville, MN',
 	},

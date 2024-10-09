@@ -23,7 +23,7 @@ export default function ClientRehabFlow() {
 							click each to learn more:
 						</p>
 					</div>
-					<dl className='mt-12 max-w-4xl relative'>
+					<dl className='mt-12 max-w-4xl sm:w-2/4 relative'>
 						{armhsServiceTypes.map((serviceType, index) => (
 							<div
 								key={index}

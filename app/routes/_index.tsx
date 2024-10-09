@@ -50,12 +50,15 @@ export default function Index() {
 					<div className='mx-auto max-w-8xl px-4 py-6 sm:px-6 lg:px-8'>
 						<section className='grid' id='services'>
 							<div className='mb-2 border-b border-green-900/10'/>
-							<h2 className='text-5xl font-bold text-gray-900 place-self-center'>
+							<h2 className='ml-[215px] pt-8 max-w-7xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
 								Our Services
 							</h2>
+							<p className='mt-4 ml-[215px] w-[425px] text-gray-500'>
+								We offer a variety of services along with our sister companies to help you achieve your goals. Click on each service to learn more.
+							</p>
 							<div>
 								<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-									<div className='mx-auto max-w-2xl py-8 lg:max-w-none'>
+									<div className='mx-auto max-w-2xl lg:max-w-none'>
 										<div className='mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0'>
 											{services.map((service) => (
 												<div key={service.name} className='group'>
@@ -102,9 +105,9 @@ export default function Index() {
 								/>
 							</div>
 							<div className='mb-2 border-b border-green-900/10'/>
-							<h2 className='text-5xl font-bold text-gray-900 place-self-center'>
+							{/* <h2 className='text-5xl font-bold text-gray-900 place-self-center'>
 								Mission & Values
-							</h2>
+							</h2> */}
 							<div className='mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-8 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8'>
 								<div>
 									<h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>

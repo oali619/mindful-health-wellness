@@ -11,9 +11,9 @@ export default function Testimonials() {
 		<div>
 			<div className='mx-auto py-8 -z-10 max-w-7xl'>
 				<div className='mb-2 border-b border-green-900/10'/>
-				<h2 className='text-5xl font-bold text-gray-900 text-center'>
+				{/* <h2 className='text-5xl font-bold text-gray-900 text-center'>
 					Success Stories
-				</h2>
+				</h2> */}
 				<div className='flex flex-col md:flex-row justify-between items-center py-8'>
 					<div className='w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-5/12 xl:w-6/12 flex-shrink-0 relative -z-[1]'>
 						<img className='rounded' src={love} />
@@ -22,10 +22,10 @@ export default function Testimonials() {
 						<h5 className='text-3xl sm:text-4xl font-black tracking-wide text-center mt-4 font-black text-left text-2xl sm:text-3xl lg:text-4xl text-center md:text-left leading-tight'>
 							Our Clients Love Us.
 						</h5>
-						<p className='mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100'>
+						{/* <p className='mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100'>
 							Here is what our clients have to say about us. We are proud to
 							have helped them achieve their goals:
-						</p>
+						</p> */}
 						<Slider autoplay pauseOnHover arrows={false}>
 							{testimonials.map((testimonial, index) => (
 								<div className='outline-none h-full flex flex-col' key={index}>
@@ -33,7 +33,7 @@ export default function Testimonials() {
 										{testimonial.heading}
 									</div>
 									<blockquote className='text-center mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-gray-700'>
-										{testimonial.quote}
+										<span className='text-3xl italic'>"</span>{testimonial.quote}<span className='text-3xl italic'>"</span>
 									</blockquote>
 									<div className='mt-auto flex justify-between items-center flex-col sm:flex-row'>
 										<div className='flex flex-col sm:flex-row items-center justify-center lg:justify-start'>

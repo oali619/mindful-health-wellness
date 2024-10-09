@@ -44,14 +44,14 @@ export default function Footer2() {
 									Values
 								</a>
 							</li>
-							<li className='mt-3'>
+							{/* <li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
 									href='#suceessStories'
 								>
 									Testimonials
 								</a>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 					<div className='w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left'>
@@ -73,7 +73,7 @@ export default function Footer2() {
 									Services
 								</a>
 							</li>
-							<li className='mt-3'>
+							{/* <li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
 									href='www.alliedhealthmn.com'
@@ -81,7 +81,7 @@ export default function Footer2() {
 								>
 									HSS
 								</a>
-							</li>
+							</li> */}
 							<li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
@@ -119,14 +119,6 @@ export default function Footer2() {
 									QAP
 								</a>
 							</li>
-							<li className='mt-3'>
-								<a
-									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
-									href='/legal'
-								>
-									Disclaimer
-								</a>
-							</li>
 						</ul>
 					</div>
 					<div className='w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left'>
@@ -149,14 +141,14 @@ export default function Footer2() {
 									Contact Form
 								</a>
 							</li>
-							<li className='mt-3'>
+							{/* <li className='mt-3'>
 								<a
 									className='border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300'
 									href='/contact'
 								>
 									File a Complaint
 								</a>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>
