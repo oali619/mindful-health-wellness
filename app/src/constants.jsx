@@ -11,8 +11,8 @@ export const navigation = [
 
 export const services = [
 	{
-		name: 'Adolt Rehabilitation Mental Health Services',
-		description: 'Mental health recovery services for adolts',
+		name: 'Adult Rehabilitation Mental Health Services',
+		description: 'Mental health recovery services for adults',
 		imageSrc: rehab,
 		imageAlt: 'Therapist sitting and listening to a patient',
 		href: '/services',
@@ -194,7 +194,7 @@ export const employees = [
 	// },
 	{
 		name: 'Dunia Ahmed, LICSW',
-		role: 'Clical Supervisor',
+		role: 'Clinical Supervisor',
 		location: 'Greater Minneapolis/St. Paol',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
