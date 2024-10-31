@@ -72,7 +72,7 @@ export const testimonials = [
 			'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
 		heading: 'Compassion and Professionalism',
 		quote:
-			'Mindful Health & Wellness has been a lifesaver for me and my family. After struggling with housing instability for years, their team stepped in and provided us with the support and resources we desperately needed. Thanks to their guidance, we were able to secure a safe, affordable home and start rebuilding our lives. I’m so grateful for their compassionate and professional approach!',
+			'Mindful Health & Wellness has been a lifeline for me during a difficult time. Their team of professionals provided me with the support and guidance I needed to navigate the challenges of mental health recovery. I am grateful for their compassion, expertise, and dedication to helping others.',
 		customerName: 'Anonymous Client',
 		customerLocation: 'Brooklyn Center, MN',
 	},
@@ -81,16 +81,16 @@ export const testimonials = [
 			'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
 		heading: 'Tough times never last...',
 		quote:
-			'I can’t thank Mindful Health & Wellness enough for their help during one of the toughest times in my life. They provided me with the tools and support to find stable housing, and they were always there to answer my questions and guide me through the process. The level of care and dedication they showed made all the difference in turning my situation around.',
+			'I can’t thank Mindful Health & Wellness enough for their help during one of the toughest times in my life. They provided me rehabilitation and consistent support to get me back on my feet. The level of care and dedication they showed made all the difference in turning my situation around.',
 		customerName: 'Anonymous Client',
-		customerLocation: 'St. Paol, MN',
+		customerLocation: 'St. Paul, MN',
 	},
 	{
 		profileImageSrc:
 			'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
 		heading: '10/10 Experience!',
 		quote:
-			'Working with Mindful Health & Wellness has been an incredible experience. Their staff is knowledgeable, kind, and genuinely invested in helping people succeed. They took the time to understand my situation and tailored their services to fit my needs. Because of their hard work and dedication, I now have a stable home and the peace of mind that comes with it.',
+			'Working with Mindful Health & Wellness has been an incredible experience. Their staff is knowledgeable, kind, and genuinely invested in helping people succeed. They took the time to understand my situation and tailored their services to fit my needs. Because of their hard work and dedication, I now have a stability and the peace of mind that comes with it.',
 		customerName: 'Anonymous Client',
 		customerLocation: 'Burnsville, MN',
 	},
@@ -183,45 +183,45 @@ export const employees = [
 	{
 		name: 'Obsa Ali, CPA (Inactive)',
 		role: 'Director',
-		location: 'Greater Minneapolis/St. Paol',
+		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
 	// {
 	// 	name: 'Lensa Ali, MD',
 	// 	role: 'Clical Supervisor',
-	// 	location: 'Greater Minneapolis/St. Paol',
+	// 	location: 'Greater Minneapolis/St. Paul',
 	// 	img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	// },
 	{
 		name: 'Dunia Ahmed, LICSW',
 		role: 'Clinical Supervisor',
-		location: 'Greater Minneapolis/St. Paol',
+		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
 	{
 		name: 'Hunnaan Khan, PA',
 		role: 'ARMHS Practitioner',
-		location: 'Greater Minneapolis/St. Paol',
+		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
 	{
 		name: 'Ismail Ali',
 		role: 'ARMHS Worker',
-		location: 'Greater Minneapolis/St. Paol',
+		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
 	{
 		name: 'Hamza Ali',
 		role: 'ARMHS Worker',
-		location: 'Greater Minneapolis/St. Paol',
+		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
-	{
-		name: 'Zahra Abdollahi',
-		role: 'Outreach Coordinator',
-		location: 'Greater Minneapolis/St. Paol',
-		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
-	},
+	// {
+	// 	name: 'Zahra Abdullahi',
+	// 	role: 'Outreach Coordinator',
+	// 	location: 'Greater Minneapolis/St. Paul',
+	// 	img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
+	// },
 ];
 
 export const legalTexts = [
