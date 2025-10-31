@@ -32,6 +32,39 @@ export default function Header() {
 								<div className='ml-10 flex items-baseline space-x-4'>
 									{navigation.map((item, index) => {
 										const current = index === currentNavIndex;
+										if (item.name.toLowerCase() === 'services') {
+											return (
+												
+												<div key={item.name} className="relative group">
+													<div
+														className={classNames(
+															current ? 'bg-green-700 text-white' : 'text-white hover:bg-green-700',
+															'rounded-md px-3 py-2 text-sm font-medium cursor-pointer'
+														)}
+													>
+														<span>Services</span>
+													</div>
+
+													{/* Dropdown */}
+													<div className="absolute left-0 mt-2 w-40 rounded-md bg-green-700 shadow-lg ring-1 ring-black ring-opacity-5 hidden group-hover:block">
+														<Link
+															to="/armhs"
+															onClick={() => setCurrentNavIndex(index)}
+															className="block px-4 py-2 text-sm text-white hover:bg-green-600"
+														>
+															ARMHS
+														</Link>
+														<Link
+															to="/245d"
+															onClick={() => setCurrentNavIndex(index)}
+															className="block px-4 py-2 text-sm text-white hover:bg-green-600"
+														>
+															245D
+														</Link>
+													</div>
+												</div>
+											);
+										}
 										return (
 											<Link
 												key={item.name}

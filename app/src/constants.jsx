@@ -3,7 +3,7 @@ import { dhsImage, rehab, housing } from '../images';
 export const navigation = [
 	{ name: 'Home', to: '/', current: true },
 	{ name: 'Services', to: '/services', current: false },
-	{ name: 'Success Stories', current: false, to: '/#successStories' },
+	// { name: 'Success Stories', current: false, to: '/#successStories' },
 	{ name: 'Referral', to: '/referral', current: false },
 	{ name: 'Team', to: '/team', current: false },
 	{ name: 'Contact', to: '/contact', current: false },
@@ -15,7 +15,7 @@ export const services = [
 		description: 'Mental health recovery services for adults',
 		imageSrc: rehab,
 		imageAlt: 'Therapist sitting and listening to a patient',
-		href: '/services',
+		href: '/armhs',
 	},
 	{
 		name: 'Housing Stabilization Services',
@@ -26,10 +26,10 @@ export const services = [
 	},
 	{
 		name: '245D Services',
-		description: 'coming soon',
+		description: 'Home and community-based services',
 		imageSrc: dhsImage,
 		imageAlt: 'Case Manager providing in home care to elderly client',
-		href: '/',
+		href: '/245d',
 	},
 ];
 
@@ -130,6 +130,18 @@ export const armhsServiceTypes = [
 	},
 ];
 
+
+export const waiverServiceCategories = [
+	{ name: '24-hour Amergency Assistance' },
+	{ name: 'Adult Companion Services' },
+	{ name: 'Homemaker Services' },
+	{ name: 'Night Supervision' },
+	{ name: 'Respite Care Services' },
+	{ name: 'Personal Support' },
+	{ name: 'Individual Community Living Support' },
+	{ name: 'Indivualized Home Supports Services' },
+];
+
 export const referrerType = [
 	{ id: 1, type: 'Case Manager' },
 	{ id: 2, type: 'Physician' },
@@ -193,14 +205,8 @@ export const employees = [
 	// 	img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	// },
 	{
-		name: 'Dunia Ahmed, LICSW',
+		name: 'Naimo Osman, LICSW',
 		role: 'Clinical Supervisor',
-		location: 'Greater Minneapolis/St. Paul',
-		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
-	},
-	{
-		name: 'Hunnaan Khan, PA',
-		role: 'ARMHS Practitioner',
 		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},
@@ -213,6 +219,24 @@ export const employees = [
 	{
 		name: 'Hamza Ali',
 		role: 'ARMHS Worker',
+		location: 'Greater Minneapolis/St. Paul',
+		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
+	},
+	{
+		name: 'Ali Ali',
+		role: 'ARMHS Worker',
+		location: 'Greater Minneapolis/St. Paul',
+		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
+	},
+	{
+		name: 'Entesar Adem',
+		role: 'ARMHS Practitioner',
+		location: 'Greater Minneapolis/St. Paul',
+		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
+	},
+	{
+		name: 'Albertine Mbu',
+		role: 'ARMHS Practitioner',
 		location: 'Greater Minneapolis/St. Paul',
 		img: 'https://tailwindui.com/plus/img/logos/mark.svg?color=green&shade=600',
 	},

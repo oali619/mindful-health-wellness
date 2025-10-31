@@ -41,7 +41,7 @@ export default function Index() {
 									Mindful Health & Wellness
 								</h1>
 								<p className='text-3xl text-right'>
-									Adult Rehabilitation Mental Health Services (ARMHS)
+									<i>Your Journey to Mental Wellness Starts Here</i> 
 								</p>
 							</div>
 							<img className='rounded-lg sm:mr-4' src={therapy} alt='Housing' />
@@ -51,10 +51,10 @@ export default function Index() {
 					<div className='mx-auto max-w-8xl px-4 py-6 sm:px-6 lg:px-8'>
 						<section className='grid' id='services'>
 							<div className='mb-2 border-b border-green-900/10' />
-							<h2 className='ml-[215px] pt-8 max-w-7xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+							<h2 className='mx-[22.25%] pt-8 max-w-7xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
 								Our Services
 							</h2>
-							<p className='mt-4 ml-[215px] w-[425px] text-gray-500'>
+							<p className='mt-4 mx-[22.25%] w-[425px] text-gray-500'>
 								We offer a variety of services along with our sister companies
 								to help you achieve your goals. Click on each service to learn
 								more.
@@ -98,9 +98,9 @@ export default function Index() {
 							<Mission />
 						</section>
 
-						<section id='successStories'>
+						{/* <section id='successStories'>
 							{isClient && <Testimonials />}
-						</section>
+						</section> */}
 						<section id='footer'>
 							<Footer />
 						</section>
