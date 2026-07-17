@@ -18,18 +18,18 @@ export const services = [
     href: "/armhs",
   },
   {
-    name: "Housing Stabilization Services",
-    description: "Click the image to visit our sister company",
-    imageSrc: housing,
-    imageAlt: "Hand handing over a pair of keys",
-    href: "https://www.alliedhealthmn.com/services",
-  },
-  {
     name: "245D Services",
     description: "Home and community-based services",
     imageSrc: dhsImage,
     imageAlt: "Case Manager providing in home care to elderly client",
     href: "/245d",
+  },
+  {
+    name: "Early Intervention Developmental Behavioral Intervention",
+    description: "Click the image to visit our sister company",
+    imageSrc: housing,
+    imageAlt: "Hand handing over a pair of keys",
+    href: "https://www.hopefulhorizonsmn.com",
   },
 ];
 
